@@ -26,120 +26,27 @@
 
         /*
         ========================================
-        2. THEME VARIABLE DEFINITIONS
+        2. FIXED LIGHT THEME VARIABLES
         ========================================
         */
-
-        /* DEFAULT: Green Theme (Deep Forest) */
-        .theme-green {
+        :root {
             /* Backgrounds */
-            --bg-gradient-start: #0f2b24;
-            --bg-gradient-end: #0a1e1b;
-            --bg-desktop-start: #0f2b24;
-            --bg-desktop-mid: #0a1e1b;
-            --bg-desktop-end: #0f2b24;
-            --header-scrolled-bg: rgba(10, 30, 27, 0.7);
-            
-            /* Text */
-            --color-text-primary: #e5e7eb; /* gray-200 */
-            --color-text-secondary: #d1d5db; /* gray-300 */
-            --color-text-muted: #9ca3af; /* gray-400 */
-            --color-text-inverted: #111827; /* gray-900 */
-            --color-success: #34d399; /* emerald-400 */
-            --color-error: #f87171; /* red-400 */
-
-            /* Gradients & Links */
-            --color-accent-start: #34d399; /* emerald-400 */
-            --color-accent-end: #22d3ee; /* cyan-400 */
-            --color-button-start: #10b981; /* emerald-500 */
-            --color-button-end: #06b6d4; /* cyan-600 */
-            --color-link: #34d399; /* emerald-400 */
-            --color-link-hover: #6ee7b7; /* emerald-300 */
-
-            /* Glass & Borders */
-            --glass-bg: rgba(255, 255, 255, 0.05);
-            --glass-border: rgba(255, 255, 255, 0.1);
-            --input-bg: rgba(255, 255, 255, 0.1);
-            --border-primary: rgba(255, 255, 255, 0.1);
-            --border-secondary: rgba(255, 255, 255, 0.2);
-        }
-
-        /* Dark Theme (Neutral Dark) */
-        .theme-dark {
-            --bg-gradient-start: #111827; /* gray-900 */
-            --bg-gradient-end: #030712; /* black */
-            --bg-desktop-start: #111827;
-            --bg-desktop-mid: #030712;
-            --bg-desktop-end: #111827;
-            --header-scrolled-bg: rgba(17, 24, 39, 0.7); /* gray-900 70% */
-            
-            --color-text-primary: #e5e7eb;
-            --color-text-secondary: #d1d5db;
-            --color-text-muted: #9ca3af;
-            --color-text-inverted: #111827;
-            --color-success: #34d399;
-            --color-error: #f87171;
-
-            --color-accent-start: #93c5fd; /* blue-300 */
-            --color-accent-end: #c4b5fd; /* violet-300 */
-            --color-button-start: #60a5fa; /* blue-400 */
-            --color-button-end: #a78bfa; /* violet-400 */
-            --color-link: #93c5fd;
-            --color-link-hover: #bfdbfe; /* blue-200 */
-
-            --glass-bg: rgba(255, 255, 255, 0.05);
-            --glass-border: rgba(255, 255, 255, 0.1);
-            --input-bg: rgba(255, 255, 255, 0.1);
-            --border-primary: rgba(255, 255, 255, 0.1);
-            --border-secondary: rgba(255, 255, 255, 0.2);
-        }
-        
-        /* Purple Theme (Amethyst) */
-        .theme-purple {
-            --bg-gradient-start: #2e104b;
-            --bg-gradient-end: #1e0b34;
-            --bg-desktop-start: #2e104b;
-            --bg-desktop-mid: #1e0b34;
-            --bg-desktop-end: #2e104b;
-            --header-scrolled-bg: rgba(46, 16, 75, 0.7);
-            
-            --color-text-primary: #e5e7eb;
-            --color-text-secondary: #d1d5db;
-            --color-text-muted: #9ca3af;
-            --color-text-inverted: #111827;
-            --color-success: #34d399;
-            --color-error: #f87171;
-
-            --color-accent-start: #c084fc; /* purple-400 */
-            --color-accent-end: #f472b6; /* pink-400 */
-            --color-button-start: #a855f7; /* purple-500 */
-            --color-button-end: #ec4899; /* pink-500 */
-            --color-link: #c084fc;
-            --color-link-hover: #e9d5ff; /* purple-200 */
-
-            --glass-bg: rgba(255, 255, 255, 0.05);
-            --glass-border: rgba(255, 255, 255, 0.1);
-            --input-bg: rgba(255, 255, 255, 0.1);
-            --border-primary: rgba(255, 255, 255, 0.1);
-            --border-secondary: rgba(255, 255, 255, 0.2);
-        }
-
-        /* White Theme (Light Mode) */
-        .theme-white {
             --bg-gradient-start: #f3f4f6; /* gray-100 */
             --bg-gradient-end: #e5e7eb; /* gray-200 */
             --bg-desktop-start: #f3f4f6;
-            --bg-desktop-mid: #e5e7eb;
-            --bg-desktop-end: #f3f4f6;
-            --header-scrolled-bg: rgba(255, 255, 255, 0.7);
+            --bg-desktop-mid: #ffffff;
+            --bg-desktop-end: #e5e7eb;
+            --header-scrolled-bg: rgba(255, 255, 255, 0.85);
             
-            --color-text-primary: #1f2937; /* gray-800 */
-            --color-text-secondary: #374151; /* gray-700 */
+            /* Text */
+            --color-text-primary: #111827; /* gray-900 */
+            --color-text-secondary: #4b5563; /* gray-600 */
             --color-text-muted: #6b7280; /* gray-500 */
             --color-text-inverted: #ffffff;
             --color-success: #10b981; /* emerald-500 */
             --color-error: #ef4444; /* red-500 */
 
+            /* Gradients & Links (Blue to Purple) */
             --color-accent-start: #3b82f6; /* blue-500 */
             --color-accent-end: #8b5cf6; /* purple-500 */
             --color-button-start: #2563eb; /* blue-600 */
@@ -147,11 +54,12 @@
             --color-link: #3b82f6;
             --color-link-hover: #60a5fa; /* blue-400 */
 
-            --glass-bg: rgba(255, 255, 255, 0.4);
-            --glass-border: rgba(0, 0, 0, 0.1);
-            --input-bg: rgba(0, 0, 0, 0.05);
-            --border-primary: rgba(0, 0, 0, 0.1);
-            --border-secondary: rgba(0, 0, 0, 0.2);
+            /* Glass & Borders */
+            --glass-bg: rgba(255, 255, 255, 0.5);
+            --glass-border: rgba(255, 255, 255, 0.8);
+            --input-bg: rgba(255, 255, 255, 0.9);
+            --border-primary: rgba(0, 0, 0, 0.05);
+            --border-secondary: rgba(0, 0, 0, 0.1);
         }
 
         /*
@@ -162,7 +70,6 @@
         body {
             background: linear-gradient(180deg, var(--bg-gradient-start) 0%, var(--bg-gradient-end) 100%);
             color: var(--color-text-primary);
-            transition: background 0.5s ease, color 0.5s ease;
         }
 
         .glass-card {
@@ -170,18 +77,15 @@
             backdrop-filter: blur(25px);
             border: 1px solid var(--glass-border);
             border-radius: 1.5rem; /* 24px */
-            box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.3);
+            box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.05);
             transition: background 0.5s ease, border 0.5s ease;
-        }
-
-        .theme-white .glass-card {
-            box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.1);
         }
 
         .header-scrolled {
             background: var(--header-scrolled-bg) !important; 
             backdrop-filter: blur(20px) !important;
-            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+            border-bottom: 1px solid var(--glass-border);
         }
 
         /* Desktop animated gradient */
@@ -210,70 +114,31 @@
         .animate-fade-in-down { animation: fadeInDown 0.8s ease-out forwards; }
         .animate-fade-in-up { animation: fadeInUp 0.8s ease-out forwards; }
 
-        /* Theme Switcher Button Styles */
-        .theme-switcher {
-            display: flex;
-            gap: 12px;
-        }
-        .theme-button {
-            width: 20px;
-            height: 20px;
-            border-radius: 50%;
-            border: 2px solid rgba(255, 255, 255, 0.3);
-            cursor: pointer;
-            /* SMOOTHER TRANSITION */
-            transition: transform 0.3s ease, box-shadow 0.3s ease, border-color 0.3s ease;
-        }
-        .theme-button:hover {
-            transform: scale(1.1);
-        }
-        .theme-button.active {
-            transform: scale(1.2);
-            box-shadow: 0 0 10px 2px var(--color-link);
-            border-color: var(--color-link);
-        }
-        .theme-white .theme-button {
-            border-color: rgba(0, 0, 0, 0.3);
-        }
-        .theme-white .theme-button.active {
-            border-color: var(--color-link);
-        }
-
         /* Social Card Styles */
         .social-card {
             background: var(--glass-bg);
             backdrop-filter: blur(25px);
             border: 1px solid var(--glass-border);
             border-radius: 1.5rem; /* 24px */
-            box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.3);
-            /* SMOOTHER TRANSITION */
+            box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.05);
             transition: transform 0.4s ease-out, box-shadow 0.4s ease-out, background 0.5s ease-out, border 0.5s ease-out;
         }
         .social-card:hover {
             transform: translateY(-8px);
-            box-shadow: 0 12px 40px 0 rgba(0, 0, 0, 0.3), 0 0 20px 0 var(--color-link-hover);
+            box-shadow: 0 12px 40px 0 rgba(0, 0, 0, 0.1), 0 0 20px 0 var(--color-link);
         }
         .social-card:hover .social-icon {
-            color: var(--color-link-hover);
+            color: var(--color-link);
             transform: scale(1.1);
         }
         .social-icon {
-            /* SMOOTHER TRANSITION */
             transition: color 0.4s ease-out, transform 0.4s ease-out;
             color: var(--color-text-secondary);
-        }
-        .theme-white .social-card {
-            box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.1);
-        }
-        .theme-white .social-card:hover {
-            box-shadow: 0 12px 40px 0 rgba(0, 0, 0, 0.15), 0 0 20px 0 var(--color-link);
         }
 
         /* MODAL STYLES */
         .modal-content-card {
-            /* SMOOTHER TRANSITION */
             transition: opacity 0.4s ease-out, transform 0.4s ease-out;
-            /* This ensures text color inherits from the current theme */
             color: var(--color-text-primary);
         }
         .modal-content-card h2,
@@ -285,15 +150,14 @@
             color: var(--color-text-secondary);
         }
         .modal-content-card strong {
-            color: var(--color-text-primary); /* Made strong text slightly brighter */
+            color: var(--color-text-primary);
         }
         .modal-content-card button {
             color: var(--color-text-muted);
-            /* SMOOTHER TRANSITION */
             transition: color 0.3s ease-out;
         }
         .modal-content-card button:hover {
-            color: var(--color-text-primary);
+            color: var(--color-text-error);
         }
         
         /* Modal Scrollbar */
@@ -310,15 +174,13 @@
 
         /*
         ========================================
-        UPDATED: MOUSE-FOLLOWING GRADIENT
+        MOUSE-FOLLOWING GRADIENT
         ========================================
         */
         #hero-name {
-            /* 1. Default state: standard text color */
             color: var(--color-text-primary);
-            /* 2. "Buttery smooth" transition for color (on mouse leave) and gradient (on mouse move) */
-            transition: color 0.4s ease-out, background-position 0.3s ease-out;
-            /* 3. Set base gradient properties for the :hover state */
+            /* Extended transition to 2.5s for a very slow, elegant auto-fade */
+            transition: color 2.5s ease-in-out, background-position 0.1s ease-out;
             background-image: radial-gradient(
                 circle at var(--x, 50%) var(--y, 50%),
                 var(--color-accent-start),
@@ -329,14 +191,15 @@
             background-clip: text;
         }
 
-        #hero-name:hover {
-            /* 1. On hover: Make the text transparent to reveal the gradient */
-            color: transparent;
+        #hero-name:hover,
+        #hero-name.auto-reveal {
+            /* Makes text transparent to reveal the moving gradient behind it */
+            color: transparent; 
         }
         
         /*
         ========================================
-        NEW: MOBILE NAVIGATION
+        MOBILE NAVIGATION
         ========================================
         */
         .mobile-menu {
@@ -359,7 +222,7 @@
     </style>
 </head>
 
-<body class="theme-green">
+<body>
 
     <!-- 
     ========================================
@@ -373,50 +236,30 @@
             
             <!-- Desktop Navigation -->
             <div class="hidden md:flex md:items-center md:space-x-8">
-                
                 <!-- Nav Links -->
                 <div class="flex space-x-8">
-                    
-                    <a href="#about" class="text-lg text-[var(--color-text-secondary)] hover:text-[var(--color-text-primary)] transition-all duration-300 ease-out border-b-2 border-transparent hover:border-[var(--color-link)]/70">About</a>
-                    <a href="#projects" class="text-lg text-[var(--color-text-secondary)] hover:text-[var(--color-text-primary)] transition-all duration-300 ease-out border-b-2 border-transparent hover:border-[var(--color-link)]/70">Projects</a>
-                    <a href="#connect" class="text-lg text-[var(--color-text-secondary)] hover:text-[var(--color-text-primary)] transition-all duration-300 ease-out border-b-2 border-transparent hover:border-[var(--color-link)]/70">Connect</a>
-                    <a href="#contact" class="text-lg text-[var(--color-text-secondary)] hover:text-[var(--color-text-primary)] transition-all duration-300 ease-out border-b-2 border-transparent hover:border-[var(--color-link)]/70">Contact</a>
-                </div>
-
-                <!-- Theme Switcher -->
-                <div class="theme-switcher">
-                    <button class="theme-button" data-theme="theme-green" style="background-color: #0f2b24;" title="Green Theme"></button>
-                    <button class="theme-button" data-theme="theme-dark" style="background-color: #111827;" title="Dark Theme"></button>
-                    <button class="theme-button" data-theme="theme-purple" style="background-color: #2e104b;" title="Purple Theme"></button>
-                    <button class="theme-button" data-theme="theme-white" style="background-color: #f3f4f6;" title="White Theme"></button>
+                    <a href="#about" class="text-lg font-medium text-[var(--color-text-secondary)] hover:text-[var(--color-text-primary)] transition-all duration-300 ease-out border-b-2 border-transparent hover:border-[var(--color-link)]/70">About</a>
+                    <a href="#projects" class="text-lg font-medium text-[var(--color-text-secondary)] hover:text-[var(--color-text-primary)] transition-all duration-300 ease-out border-b-2 border-transparent hover:border-[var(--color-link)]/70">Projects</a>
+                    <a href="#connect" class="text-lg font-medium text-[var(--color-text-secondary)] hover:text-[var(--color-text-primary)] transition-all duration-300 ease-out border-b-2 border-transparent hover:border-[var(--color-link)]/70">Connect</a>
+                    <a href="#contact" class="text-lg font-medium text-[var(--color-text-secondary)] hover:text-[var(--color-text-primary)] transition-all duration-300 ease-out border-b-2 border-transparent hover:border-[var(--color-link)]/70">Contact</a>
                 </div>
             </div>
 
-            <!-- NEW: Hamburger Button (Mobile) -->
+            <!-- Hamburger Button (Mobile) -->
             <button id="hamburger-btn" class="md:hidden z-[110] space-y-1.5">
                 <div class="line-1 w-6 h-0.5 bg-[var(--color-text-primary)] hamburger-line"></div>
                 <div class="line-2 w-6 h-0.5 bg-[var(--color-text-primary)] hamburger-line"></div>
                 <div class="line-3 w-6 h-0.5 bg-[var(--color-text-primary)] hamburger-line"></div>
             </button>
-
         </nav>
     </header>
 
-    <!-- NEW: Mobile Menu (Hidden by default) -->
-    <div id="mobile-menu" 
-         class="mobile-menu fixed inset-0 z-[60] glass-card h-screen w-screen flex flex-col justify-center items-center space-y-8
-                transform -translate-x-full md:hidden">
+    <!-- Mobile Menu (Hidden by default) -->
+    <div id="mobile-menu" class="mobile-menu fixed inset-0 z-[60] bg-[#f3f4f6]/95 backdrop-blur-2xl h-screen w-screen flex flex-col justify-center items-center space-y-8 transform -translate-x-full md:hidden">
         <a href="#about" class="mobile-nav-link text-3xl font-bold text-[var(--color-text-secondary)] hover:text-[var(--color-text-primary)]">About</a>
         <a href="#projects" class="mobile-nav-link text-3xl font-bold text-[var(--color-text-secondary)] hover:text-[var(--color-text-primary)]">Projects</a>
         <a href="#connect" class="mobile-nav-link text-3xl font-bold text-[var(--color-text-secondary)] hover:text-[var(--color-text-primary)]">Connect</a>
         <a href="#contact" class="mobile-nav-link text-3xl font-bold text-[var(--color-text-secondary)] hover:text-[var(--color-text-primary)]">Contact</a>
-        
-        <div class="theme-switcher pt-8">
-            <button class="theme-button" data-theme="theme-green" style="background-color: #0f2b24;" title="Green Theme"></button>
-            <button class="theme-button" data-theme="theme-dark" style="background-color: #111827;" title="Dark Theme"></button>
-            <button class="theme-button" data-theme="theme-purple" style="background-color: #2e104b;" title="Purple Theme"></button>
-            <button class="theme-button" data-theme="theme-white" style="background-color: #f3f4f6;" title="White Theme"></button>
-        </div>
     </div>
 
     <main class="container mx-auto max-w-7xl px-6">
@@ -431,7 +274,7 @@
                 Hi, I'm <span id="hero-name">Abhinav Das</span>
             </h1>
             <p class="text-xl md:text-3xl text-[var(--color-text-secondary)] mt-4 mb-8 opacity-0 animate-fade-in-up" style="animation-delay: 0.5s;">
-                Creative Graphics Designer & Tech Enthusiast
+                Creative Web Developer & UI Enthusiast
             </p>
             
             <a href="#projects" 
@@ -448,18 +291,18 @@
         -->
         <section id="about" class="my-32">
             <div class="glass-card p-8 md:p-12 js-scroll-reveal opacity-0 translate-y-8 transition-all duration-700 ease-out">
-                <h2 class="text-4xl font-bold text-center mb-8 text-[var(--color-text-primary)]">About Me</h2>
+                <h2 class="text-4xl font-bold text-center mb-10 text-[var(--color-text-primary)]">About Me</h2>
                 <div class="flex flex-col md:flex-row items-center">
                     <img src="profile.jpg" 
                          alt="A professional headshot of Abhinav Das" 
-                         class="w-36 h-36 rounded-full border-4 border-[var(--border-secondary)] shadow-lg mb-6 md:mb-0 md:mr-8 object-cover flex-shrink-0">
+                         class="w-40 h-40 rounded-full border-4 border-white shadow-xl mb-8 md:mb-0 md:mr-10 object-cover flex-shrink-0">
                     
-                    <div class="text-lg text-[var(--color-text-secondary)] leading-relaxed space-y-4">
+                    <div class="text-lg text-[var(--color-text-secondary)] leading-relaxed space-y-5">
                         <p>
                             I’m Abhinav — a creator driven by imagination, design, and meaningful storytelling.
                         </p>
                         <p>
-                            At 19, I founded <strong class="text-[var(--color-text-primary)] font-semibold">Zyphix Studios</strong>, where I shape visual identities, design digital experiences, and bring ideas to life through editing and media.
+                            At 19, I founded <strong class="text-[var(--color-text-primary)] font-bold">Zyphix Studios</strong>, where I shape visual identities, design digital experiences, and bring ideas to life through editing and media.
                         </p>
                         <p>
                             I’m always exploring new creative styles, learning new tools, and improving the way I tell stories through visuals. My work blends aesthetics, clarity, and emotion — aiming to leave an impression that lasts.
@@ -483,31 +326,41 @@
                 
                 <!-- Project 1: Zyphix Studios -->
                 <div class="glass-card p-6 transform hover:-translate-y-2 transition-all duration-400 ease-out js-scroll-reveal opacity-0 translate-y-8" style="animation-delay: 0.1s;">
-                    <img src="zyphix-logo.jpg" alt="Zyphix Studios Logo" class="rounded-lg mb-4 w-full h-48 object-cover">
-                    <h3 class="text-2xl font-semibold text-[var(--color-text-primary)] mb-2">Zyphix Studios</h3>
-                    <p class="text-[var(--color-text-secondary)] mb-4">A design and media studio delivering high-quality branding, content creation, and post-production solutions.</p>
-                    <button id="open-zyphix-modal" class="text-[var(--color-link)] font-medium hover:text-[var(--color-link-hover)] transition-colors duration-300 ease-out cursor-pointer">
-                        See More About Zyphix Studios &rarr;
+                    <img src="zyphix-logo.jpg" alt="Zyphix Studios Logo" class="rounded-xl mb-6 w-full h-48 object-cover shadow-sm">
+                    <h3 class="text-2xl font-bold text-[var(--color-text-primary)] mb-3">Zyphix Studios</h3>
+                    <p class="text-[var(--color-text-secondary)] mb-6 leading-relaxed">A design and media studio delivering high-quality branding, content creation, and post-production solutions.</p>
+                    <button id="open-zyphix-modal" class="text-[var(--color-link)] font-semibold hover:text-[var(--color-link-hover)] transition-colors duration-300 ease-out cursor-pointer flex items-center gap-2">
+                        See More <span class="text-xl">&rarr;</span>
                     </button>
                 </div>
 
                 <!-- Project 2: EdLance -->
                 <div class="glass-card p-6 transform hover:-translate-y-2 transition-all duration-400 ease-out js-scroll-reveal opacity-0 translate-y-8" style="animation-delay: 0.2s;">
-                    <img src="edlance-logo.jpg" alt="EdLance Logo" class="rounded-lg mb-4 w-full h-48 object-cover" onerror="this.src='https://placehold.co/600x400/0f2b24/2dd4bf?text=EdLance'; this.onerror=null;">
-                    <h3 class="text-2xl font-semibold text-[var(--color-text-primary)] mb-2">EdLance</h3>
-                    <p class="text-[var(--color-text-secondary)] mb-4">A freelancing platform for students to gain real project experience and build their portfolios.</p>
-                    <button id="open-edlance-modal" class="text-[var(--color-link)] font-medium hover:text-[var(--color-link-hover)] transition-colors duration-300 ease-out cursor-pointer">
-                        See More About EdLance &rarr;
+                    <img src="edlance-logo.jpg" alt="EdLance Logo" class="rounded-xl mb-6 w-full h-48 object-cover shadow-sm" onerror="this.src='https://placehold.co/600x400/e5e7eb/3b82f6?text=EdLance'; this.onerror=null;">
+                    <h3 class="text-2xl font-bold text-[var(--color-text-primary)] mb-3">EdLance</h3>
+                    <p class="text-[var(--color-text-secondary)] mb-6 leading-relaxed">A freelancing platform for students to gain real project experience and build their portfolios.</p>
+                    <button id="open-edlance-modal" class="text-[var(--color-link)] font-semibold hover:text-[var(--color-link-hover)] transition-colors duration-300 ease-out cursor-pointer flex items-center gap-2">
+                        See More <span class="text-xl">&rarr;</span>
                     </button>
                 </div>
 
                 <!-- Project 3: Business Management System -->
                 <div class="glass-card p-6 transform hover:-translate-y-2 transition-all duration-400 ease-out js-scroll-reveal opacity-0 translate-y-8" style="animation-delay: 0.3s;">
-                    <img src="BMS.jpg" alt="Business Management System Logo" class="rounded-lg mb-4 w-full h-48 object-cover">
-                    <h3 class="text-2xl font-semibold text-[var(--color-text-primary)] mb-2">Business Management System</h3>
-                    <p class="text-[var(--color-text-secondary)] mb-4">A desktop application (Java Swing & MySQL) to manage inventory, employees, and finances for a small business.</p>
-                    <button id="open-bms-modal" class="text-[var(--color-link)] font-medium hover:text-[var(--color-link-hover)] transition-colors duration-300 ease-out cursor-pointer">
-                        See More About BMS &rarr;
+                    <img src="BMS.jpg" alt="Business Management System Logo" class="rounded-xl mb-6 w-full h-48 object-cover shadow-sm" onerror="this.src='https://placehold.co/600x400/e5e7eb/3b82f6?text=BMS'; this.onerror=null;">
+                    <h3 class="text-2xl font-bold text-[var(--color-text-primary)] mb-3">Business Management</h3>
+                    <p class="text-[var(--color-text-secondary)] mb-6 leading-relaxed">A desktop application (Java Swing & MySQL) to manage inventory, employees, and finances for a small business.</p>
+                    <button id="open-bms-modal" class="text-[var(--color-link)] font-semibold hover:text-[var(--color-link-hover)] transition-colors duration-300 ease-out cursor-pointer flex items-center gap-2">
+                        See More <span class="text-xl">&rarr;</span>
+                    </button>
+                </div>
+
+                <!-- Project 4: FRISP OS -->
+                <div class="glass-card p-6 transform hover:-translate-y-2 transition-all duration-400 ease-out js-scroll-reveal opacity-0 translate-y-8" style="animation-delay: 0.4s;">
+                    <img src="frisp-logo.jpg" alt="FRISP OS Logo" class="rounded-xl mb-6 w-full h-48 object-cover shadow-sm" onerror="this.src='https://placehold.co/600x400/e5e7eb/3b82f6?text=FRISP+OS'; this.onerror=null;">
+                    <h3 class="text-2xl font-bold text-[var(--color-text-primary)] mb-3">FRISP OS</h3>
+                    <p class="text-[var(--color-text-secondary)] mb-6 leading-relaxed">An experimental microkernel operating system built on bare metal to understand system architecture from first principles.</p>
+                    <button id="open-frisp-modal" class="text-[var(--color-link)] font-semibold hover:text-[var(--color-link-hover)] transition-colors duration-300 ease-out cursor-pointer flex items-center gap-2">
+                        See More <span class="text-xl">&rarr;</span>
                     </button>
                 </div>
 
@@ -527,82 +380,116 @@
                 
                 <!-- LinkedIn -->
                 <a href="https://www.linkedin.com/in/abhinavdas2600?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" target="_blank" rel="noopener noreferrer" class="social-card p-8 flex flex-col items-center justify-center text-center js-scroll-reveal opacity-0 translate-y-8" style="animation-delay: 0.1s;">
-                    <svg class="w-16 h-16 mb-4 social-icon" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.783-1.75-1.75s.784-1.75 1.75-1.75 1.75.783 1.75 1.75-.784 1.75-1.75 1.75zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/></svg>
-                    <h3 class="text-2xl font-semibold text-[var(--color-text-primary)] mb-1">LinkedIn</h3>
-                    <p class="text-[var(--color-text-muted)]">Professional Network</p>
+                    <svg class="w-14 h-14 mb-5 social-icon" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.783-1.75-1.75s.784-1.75 1.75-1.75 1.75.783 1.75 1.75-.784 1.75-1.75 1.75zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/></svg>
+                    <h3 class="text-2xl font-bold text-[var(--color-text-primary)] mb-2">LinkedIn</h3>
+                    <p class="text-[var(--color-text-muted)] font-medium">Professional Network</p>
                 </a>
                 
                 <!-- GitHub -->
                 <a href="https://github.com/mr-mitro06" target="_blank" rel="noopener noreferrer" class="social-card p-8 flex flex-col items-center justify-center text-center js-scroll-reveal opacity-0 translate-y-8" style="animation-delay: 0.2s;">
-                    <svg class="w-16 h-16 mb-4 social-icon" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.109-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/></svg>
-                    <h3 class="text-2xl font-semibold text-[var(--color-text-primary)] mb-1">GitHub</h3>
-                    <p class="text-[var(--color-text-muted)]">Code & Projects</p>
+                    <svg class="w-14 h-14 mb-5 social-icon" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.109-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/></svg>
+                    <h3 class="text-2xl font-bold text-[var(--color-text-primary)] mb-2">GitHub</h3>
+                    <p class="text-[var(--color-text-muted)] font-medium">Code & Projects</p>
                 </a>
 
                 <!-- Instagram -->
                 <a href="https://www.instagram.com/mr_mitro06?igsh=MWgzd3RiajI3MnM0eA==" target="_blank" rel="noopener noreferrer" class="social-card p-8 flex flex-col items-center justify-center text-center js-scroll-reveal opacity-0 translate-y-8" style="animation-delay: 0.3s;">
-                    <svg class="w-16 h-16 mb-4 social-icon" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.07 1.646.07 4.85s-.012 3.584-.07 4.85c-.148 3.227-1.667 4.77-4.919 4.919-1.266.058-1.646.07-4.85.07s-3.584-.012-4.85-.07c-3.252-.148-4.771-1.691-4.919-4.919-.058-1.265-.07-1.646-.07-4.85s.012-3.584.07-4.85c.148-3.227 1.667-4.77 4.919-4.919 1.266.058 1.646.07 4.85.07zm0-2.163c-3.273 0-3.663.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.284-.073 1.673-.073 4.947s.014 3.663.072 4.947c.2 4.358 2.618 6.78 6.98 6.98 1.284.059 1.673.073 4.947.073s3.663-.014 4.947-.072c4.358-.2 6.78-2.618 6.98-6.98.059-1.284.073-1.673.073-4.947s-.014-3.663-.072-4.947c-.2-4.358-2.618-6.78-6.98-6.98-1.284-.059-1.673-.073-4.947-.073zM12 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.162 6.162 6.162 6.162-2.759 6.162-6.162-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.791-4-4s1.791-4 4-4 4 1.791 4 4-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/></svg>
-                    <h3 class="text-2xl font-semibold text-[var(--color-text-primary)] mb-1">Instagram</h3>
-                    <p class="text-[var(--color-text-muted)]">Visuals & Stories</p>
+                    <svg class="w-14 h-14 mb-5 social-icon" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.07 1.646.07 4.85s-.012 3.584-.07 4.85c-.148 3.227-1.667 4.77-4.919 4.919-1.266.058-1.646.07-4.85.07s-3.584-.012-4.85-.07c-3.252-.148-4.771-1.691-4.919-4.919-.058-1.265-.07-1.646-.07-4.85s.012-3.584.07-4.85c.148-3.227 1.667-4.77 4.919-4.919 1.266.058 1.646.07 4.85.07zm0-2.163c-3.273 0-3.663.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.284-.073 1.673-.073 4.947s.014 3.663.072 4.947c.2 4.358 2.618 6.78 6.98 6.98 1.284.059 1.673.073 4.947.073s3.663-.014 4.947-.072c4.358-.2 6.78-2.618 6.98-6.98.059-1.284.073-1.673.073-4.947s-.014-3.663-.072-4.947c-.2-4.358-2.618-6.78-6.98-6.98-1.284-.059-1.673-.073-4.947-.073zM12 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.162 6.162 6.162 6.162-2.759 6.162-6.162-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.791-4-4s1.791-4 4-4 4 1.791 4 4-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/></svg>
+                    <h3 class="text-2xl font-bold text-[var(--color-text-primary)] mb-2">Instagram</h3>
+                    <p class="text-[var(--color-text-muted)] font-medium">Visuals & Stories</p>
                 </a>
 
                 <!-- Facebook -->
                 <a href="https://www.facebook.com/share/1DTDu8U5As/" target="_blank" rel="noopener noreferrer" class="social-card p-8 flex flex-col items-center justify-center text-center js-scroll-reveal opacity-0 translate-y-8" style="animation-delay: 0.4s;">
-                    <svg class="w-16 h-16 mb-4 social-icon" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-3 7h-1.924c-.615 0-1.076.252-1.076.888v1.112h3l-.238 2h-2.762v8h-3v-8h-2v-2h2v-1.677c0-1.611 1.023-3.323 3.198-3.323h1.802v3z"/></svg>
-                    <h3 class="text-2xl font-semibold text-[var(--color-text-primary)] mb-1">Facebook</h3>
-                    <p class="text-[var(--color-text-muted)]">Updates & News</p>
+                    <svg class="w-14 h-14 mb-5 social-icon" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-3 7h-1.924c-.615 0-1.076.252-1.076.888v1.112h3l-.238 2h-2.762v8h-3v-8h-2v-2h2v-1.677c0-1.611 1.023-3.323 3.198-3.323h1.802v3z"/></svg>
+                    <h3 class="text-2xl font-bold text-[var(--color-text-primary)] mb-2">Facebook</h3>
+                    <p class="text-[var(--color-text-muted)] font-medium">Updates & News</p>
                 </a>
                 
                 <!-- Substack -->
                 <a href="https://substack.com/@echoesofzephyr?utm_source=share&utm_medium=android&r=6sgnzf" target="_blank" rel="noopener noreferrer" class="social-card p-8 flex flex-col items-center justify-center text-center js-scroll-reveal opacity-0 translate-y-8" style="animation-delay: 0.5s;">
-                    <svg class="w-16 h-16 mb-4 social-icon" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path d="M22.539 8.242H1.46V5.406h21.08v2.836zM1.46 10.812V24L12 18.11 22.54 24V10.812H1.46zM22.54 0H1.46v2.836h21.08V0z"/></svg>
-                    <h3 class="text-2xl font-semibold text-[var(--color-text-primary)] mb-1">Substack</h3>
-                    <p class="text-[var(--color-text-muted)]">Writing & Ideas</p>
+                    <svg class="w-14 h-14 mb-5 social-icon" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path d="M22.539 8.242H1.46V5.406h21.08v2.836zM1.46 10.812V24L12 18.11 22.54 24V10.812H1.46zM22.54 0H1.46v2.836h21.08V0z"/></svg>
+                    <h3 class="text-2xl font-bold text-[var(--color-text-primary)] mb-2">Substack</h3>
+                    <p class="text-[var(--color-text-muted)] font-medium">Writing & Ideas</p>
                 </a>
 
                 <!-- Discord -->
                 <a href="https://discord.com" target="_blank" rel="noopener noreferrer" class="social-card p-8 flex flex-col items-center justify-center text-center js-scroll-reveal opacity-0 translate-y-8" style="animation-delay: 0.6s;" title="Add me on Discord: mr_mitro06">
-                    <svg class="w-16 h-16 mb-4 social-icon" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path d="M19.54 0c-.88.44-1.7.83-2.48 1.14-.6-.27-1.2-.5-1.82-.68-.6-.17-1.18-.3-1.75-.38-.57-.08-1.12-.12-1.67-.12-.55 0-1.1.04-1.67.12-.57.08-1.15.2-1.75.38-.6.18-1.2.4-1.8.68-.78-.3-1.6-.7-2.47-1.14C.72 1.3 0 2.74 0 4.2v15.25c0 1.63 1.13 2.98 2.53 3.32.5.12.98.2 1.45.26.47.06.93.1 1.37.12.44.02.87.03 1.28.03s.84-.01 1.28-.03c.44-.02.9-.06 1.37-.12.47-.06.95-.14 1.45-.26 1.4-.34 2.53-1.7 2.53-3.32V4.2c0-1.46-.72-2.9-2.46-3.94zM8.04 15.22c-1.2 0-2.17-1-2.17-2.2 0-1.2 1-2.2 2.17-2.2 1.2 0 2.18 1 2.18 2.2 0 1.2-.98 2.2-2.18 2.2zm7.92 0c-1.2 0-2.17-1-2.17-2.2 0-1.2 1-2.2 2.17-2.2 1.2 0 2.18 1 2.18 2.2 0 1.2-.98 2.2-2.18 2.2z"/></svg>
-                    <h3 class="text-2xl font-semibold text-[var(--color-text-primary)] mb-1">Discord</h3>
-                    <p class="text-[var(--color-text-muted)]">Community & Chat</p>
+                    <svg class="w-14 h-14 mb-5 social-icon" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path d="M19.54 0c-.88.44-1.7.83-2.48 1.14-.6-.27-1.2-.5-1.82-.68-.6-.17-1.18-.3-1.75-.38-.57-.08-1.12-.12-1.67-.12-.55 0-1.1.04-1.67.12-.57.08-1.15.2-1.75.38-.6.18-1.2.4-1.8.68-.78-.3-1.6-.7-2.47-1.14C.72 1.3 0 2.74 0 4.2v15.25c0 1.63 1.13 2.98 2.53 3.32.5.12.98.2 1.45.26.47.06.93.1 1.37.12.44.02.87.03 1.28.03s.84-.01 1.28-.03c.44-.02.9-.06 1.37-.12.47-.06.95-.14 1.45-.26 1.4-.34 2.53-1.7 2.53-3.32V4.2c0-1.46-.72-2.9-2.46-3.94zM8.04 15.22c-1.2 0-2.17-1-2.17-2.2 0-1.2 1-2.2 2.17-2.2 1.2 0 2.18 1 2.18 2.2 0 1.2-.98 2.2-2.18 2.2zm7.92 0c-1.2 0-2.17-1-2.17-2.2 0-1.2 1-2.2 2.17-2.2 1.2 0 2.18 1 2.18 2.2 0 1.2-.98 2.2-2.18 2.2z"/></svg>
+                    <h3 class="text-2xl font-bold text-[var(--color-text-primary)] mb-2">Discord</h3>
+                    <p class="text-[var(--color-text-muted)] font-medium">Community & Chat</p>
                 </a>
             </div>
         </section>
         
         <!-- 
         ========================================
-        CONTACT SECTION
+        NEW, REDESIGNED CONTACT SECTION
         ========================================
         -->
         <section id="contact" class="my-32 pb-32">
-            <div class="glass-card max-w-3xl mx-auto p-8 md:p-12 js-scroll-reveal opacity-0 translate-y-8 transition-all duration-700 ease-out">
-                <h2 class="text-4xl font-bold text-center mb-8 text-[var(--color-text-primary)]">Get In Touch</h2>
-                <p class="text-center text-[var(--color-text-secondary)] mb-8 text-lg">Have a project in mind or just want to say hi? My inbox is always open.</p>
+            <div class="glass-card max-w-6xl mx-auto p-8 lg:p-14 js-scroll-reveal opacity-0 translate-y-8 transition-all duration-700 ease-out border border-white/60">
                 
-                <!-- This form is now handled by JavaScript -->
-                <form id="contact-form">
-                    <div class="grid grid-cols-1 md:grid-cols-2 gap-6 mb-6">
-                        <div>
-                            <label for="name" class="block text-sm font-medium text-[var(--color-text-secondary)] mb-2">Name</label>
-                            <input type="text" id="name" name="name" required class="w-full p-3 rounded-lg bg-[var(--input-bg)] border border-[var(--border-secondary)] text-[var(--color-text-primary)] focus:outline-none focus:ring-2 focus:ring-[var(--color-link)] transition-all duration-300 ease-out">
+                <div class="flex flex-col lg:flex-row gap-16 items-center">
+                    <!-- Left Side: Information -->
+                    <div class="lg:w-5/12 w-full text-left">
+                        <h2 class="text-5xl lg:text-6xl font-black mb-6 text-[var(--color-text-primary)] leading-tight">
+                            Let's build <br/> something <br/>
+                            <span class="bg-clip-text text-transparent bg-gradient-to-r from-[var(--color-accent-start)] to-[var(--color-accent-end)]">brilliant.</span>
+                        </h2>
+                        <p class="text-lg text-[var(--color-text-secondary)] mb-10 leading-relaxed font-medium">
+                            Have a project in mind, a freelance opportunity, or just want to chat about design and tech? My inbox is always open.
+                        </p>
+                        
+                        <div class="flex flex-col gap-6">
+                            <!-- Email Marker -->
+                            <div class="flex items-center gap-5 text-[var(--color-text-secondary)] group">
+                                <div class="w-14 h-14 rounded-2xl bg-white flex items-center justify-center shadow-sm border border-[var(--border-secondary)] group-hover:scale-105 transition-transform duration-300">
+                                    <svg class="w-6 h-6 text-[var(--color-link)]" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"></path></svg>
+                                </div>
+                                <div>
+                                    <p class="text-sm font-bold text-[var(--color-text-muted)] uppercase tracking-wider mb-1">Send an Email</p>
+                                    <span class="text-lg font-bold text-[var(--color-text-primary)]">Direct Message Me</span>
+                                </div>
+                            </div>
                         </div>
-                        <div>
-                            <label for="email" class="block text-sm font-medium text-[var(--color-text-secondary)] mb-2">Email</I</label>
-                            <input type="email" id="email" name="email" required class="w-full p-3 rounded-lg bg-[var(--input-bg)] border border-[var(--border-secondary)] text-[var(--color-text-primary)] focus:outline-none focus:ring-2 focus:ring-[var(--color-link)] transition-all duration-300 ease-out">
+                    </div>
+                    
+                    <!-- Right Side: The Clean Form -->
+                    <div class="lg:w-7/12 w-full">
+                        <div class="bg-white/80 backdrop-blur-xl p-8 sm:p-10 rounded-[2rem] border border-white shadow-xl relative overflow-hidden">
+                            <!-- Decorative background blur inside the card -->
+                            <div class="absolute -top-20 -right-20 w-40 h-40 bg-[var(--color-accent-start)] rounded-full mix-blend-multiply filter blur-[64px] opacity-30"></div>
+                            
+                            <form id="contact-form" class="relative z-10 space-y-6">
+                                <div class="grid grid-cols-1 sm:grid-cols-2 gap-6">
+                                    <div class="space-y-2">
+                                        <label for="name" class="block text-sm font-bold text-[var(--color-text-primary)] tracking-wide">Name</label>
+                                        <input type="text" id="name" name="name" required placeholder="John Doe" 
+                                            class="w-full p-4 rounded-xl bg-[var(--bg-gradient-start)] border-2 border-transparent hover:border-[var(--border-secondary)] text-[var(--color-text-primary)] placeholder-[var(--color-text-muted)] focus:outline-none focus:bg-white focus:border-[var(--color-link)] focus:ring-4 focus:ring-[var(--color-link)]/10 transition-all duration-300 shadow-inner">
+                                    </div>
+                                    <div class="space-y-2">
+                                        <label for="email" class="block text-sm font-bold text-[var(--color-text-primary)] tracking-wide">Email</label>
+                                        <input type="email" id="email" name="email" required placeholder="john@example.com" 
+                                            class="w-full p-4 rounded-xl bg-[var(--bg-gradient-start)] border-2 border-transparent hover:border-[var(--border-secondary)] text-[var(--color-text-primary)] placeholder-[var(--color-text-muted)] focus:outline-none focus:bg-white focus:border-[var(--color-link)] focus:ring-4 focus:ring-[var(--color-link)]/10 transition-all duration-300 shadow-inner">
+                                    </div>
+                                </div>
+                                <div class="space-y-2">
+                                    <label for="message" class="block text-sm font-bold text-[var(--color-text-primary)] tracking-wide">Message</label>
+                                    <textarea id="message" name="message" rows="5" required placeholder="How can I help you today?" 
+                                        class="w-full p-4 rounded-xl bg-[var(--bg-gradient-start)] border-2 border-transparent hover:border-[var(--border-secondary)] text-[var(--color-text-primary)] placeholder-[var(--color-text-muted)] focus:outline-none focus:bg-white focus:border-[var(--color-link)] focus:ring-4 focus:ring-[var(--color-link)]/10 transition-all duration-300 shadow-inner resize-none"></textarea>
+                                </div>
+                                <button type="submit" class="w-full py-4 mt-2 bg-gradient-to-r from-[var(--color-button-start)] to-[var(--color-button-end)] text-white text-lg font-bold rounded-xl shadow-[0_10px_20px_rgba(37,99,235,0.2)] hover:shadow-[0_15px_30px_rgba(37,99,235,0.3)] hover:-translate-y-1 transition-all duration-400 ease-out flex items-center justify-center gap-2">
+                                    <span>Send Message</span>
+                                    <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3"></path></svg>
+                                </button>
+                                <!-- Form Status Message -->
+                                <div id="form-status" class="text-center text-sm font-bold h-4"></div>
+                            </form>
                         </div>
                     </div>
-                    <div class="mb-6">
-                        <label for="message" class="block text-sm font-medium text-[var(--color-text-secondary)] mb-2">Message</label>
-                        <textarea id="message" name="message" rows="5" required class="w-full p-3 rounded-lg bg-[var(--input-bg)] border border-[var(--border-secondary)] text-[var(--color-text-primary)] focus:outline-none focus:ring-2 focus:ring-[var(--color-link)] transition-all duration-300 ease-out"></textarea>
-                    </div>
-                    <div class="text-center">
-                        <button type="submit" class="px-8 py-3 bg-gradient-to-r from-[var(--color-button-start)] to-[var(--color-button-end)] text-white text-lg font-semibold rounded-full shadow-lg hover:shadow-xl hover:scale-105 transition-all duration-400 ease-out">
-                            Send Message
-                        </button>
-                    </div>
-                    <!-- Form Status Message -->
-                    <div id="form-status" class="mt-4 text-center text-lg"></div>
-                </form>
+                </div>
+
             </div>
         </section>
 
@@ -613,8 +500,8 @@
     FOOTER
     ========================================
     -->
-    <footer class="border-t border-[var(--border-primary)] mt-16">
-        <div class="container mx-auto max-w-7xl px-6 py-8 text-center text-[var(--color-text-muted)]">
+    <footer class="border-t border-[var(--border-primary)] mt-16 bg-white/30 backdrop-blur-md">
+        <div class="container mx-auto max-w-7xl px-6 py-8 text-center text-[var(--color-text-muted)] font-medium">
             <p>&copy; 2025 Abhinav Das. All rights reserved.</p>
         </div>
     </footer>
@@ -626,47 +513,33 @@
     -->
 
     <!-- Zyphix Modal -->
-    <div id="zyphix-modal" class="hidden fixed inset-0 z-[100] flex items-center justify-center p-6 bg-black/50 backdrop-blur-sm transition-opacity duration-400 ease-out">
-        
-        <!-- Modal Backdrop -->
+    <div id="zyphix-modal" class="hidden fixed inset-0 z-[100] flex items-center justify-center p-6 bg-gray-900/60 backdrop-blur-sm transition-opacity duration-400 ease-out">
         <div id="modal-backdrop-zyphix" class="absolute inset-0"></div>
-
-        <!-- Modal Content Card -->
-        <div id="modal-content-card-zyphix" class="modal-content-card glass-card w-full max-w-2xl p-8 relative z-10 opacity-0 translate-y-8">
-            
-            <!-- Close Button -->
-            <button id="close-zyphix-modal" class="absolute top-4 right-6 text-3xl font-bold transition-colors duration-300 ease-out">&times;</button>
-            
-            <div class="flex flex-col sm:flex-row items-start mb-6">
-                <img src="zyphix-logo.jpg" alt="Zyphix Studios Logo" class="w-24 h-24 rounded-lg mr-6 mb-4 sm:mb-0 border-2 border-[var(--border-secondary)] flex-shrink-0 object-cover">
-                <div>
-                    <h2 class="text-4xl font-bold">Zyphix Studios</h2>
-                    <p class="text-xl">Creative Design & Media</p>
+        <div id="modal-content-card-zyphix" class="modal-content-card glass-card bg-white/95 w-full max-w-2xl p-8 relative z-10 opacity-0 translate-y-8 shadow-2xl border-white">
+            <button id="close-zyphix-modal" class="absolute top-4 right-6 text-4xl text-gray-400 hover:text-gray-900 font-bold transition-colors duration-300 ease-out">&times;</button>
+            <div class="flex flex-col sm:flex-row items-start mb-8">
+                <img src="zyphix-logo.jpg" alt="Zyphix Studios Logo" class="w-28 h-28 rounded-2xl mr-6 mb-4 sm:mb-0 border border-[var(--border-secondary)] shadow-sm flex-shrink-0 object-cover">
+                <div class="pt-2">
+                    <h2 class="text-4xl font-bold mb-1 text-[var(--color-text-primary)]">Zyphix Studios</h2>
+                    <p class="text-xl text-[var(--color-link)] font-semibold">Creative Design & Media</p>
                 </div>
             </div>
-
-            <!-- Scrollable Body -->
-            <div class="space-y-4 leading-relaxed max-h-[60vh] overflow-y-auto pr-2 modal-body">
-                <p>Zyphix Studios is a modern creative workspace dedicated to crafting high-quality digital experiences. Our mission is to help brands and creators stand out by delivering clean, impactful, and visually consistent design solutions. We focus on blending creativity with strategy, ensuring every project communicates clearly and leaves a lasting impression.</p>
-                
-                <h3 class="text-2xl font-semibold pt-2">Services Offered</h3>
-                <ul class="list-disc list-inside ml-4 space-y-2">
-                    <li><strong>Branding & Visual Identity:</strong> Developing professional brand systems, logos, typography sets, and color palettes that establish a strong and memorable identity.</li>
-                    <li><strong>UI Design for Web & Mobile:</strong> Designing intuitive and visually appealing interfaces that focus on user experience, clarity, and modern design principles.</li>
-                    <li><strong>Video Post-Production & Editing:</strong> High-quality editing, color grading, visual cleanup, sound enhancement, and cinematic storytelling for all types of video content.</li>
-                    <li><strong>Content Creation & Strategy:</strong> Creating digital-ready content — reels, posters, banners, social media creatives — crafted to strengthen online presence and engagement.</li>
-                    <li><strong>Motion Graphics & Animation:</strong> Designing smooth, modern motion designs for branding, intros, promotional videos, and digital campaigns.</li>
+            <div class="space-y-5 leading-relaxed max-h-[60vh] overflow-y-auto pr-4 modal-body text-[var(--color-text-secondary)]">
+                <p class="font-medium">Zyphix Studios is a modern creative workspace dedicated to crafting high-quality digital experiences. Our mission is to help brands and creators stand out by delivering clean, impactful, and visually consistent design solutions. We focus on blending creativity with strategy, ensuring every project communicates clearly and leaves a lasting impression.</p>
+                <h3 class="text-2xl font-bold pt-4 text-[var(--color-text-primary)]">Services Offered</h3>
+                <ul class="list-disc list-inside ml-2 space-y-3 font-medium">
+                    <li><strong class="text-[var(--color-text-primary)]">Branding & Visual Identity:</strong> Developing professional brand systems, logos, typography sets, and color palettes that establish a strong and memorable identity.</li>
+                    <li><strong class="text-[var(--color-text-primary)]">UI Design for Web & Mobile:</strong> Designing intuitive and visually appealing interfaces that focus on user experience, clarity, and modern design principles.</li>
+                    <li><strong class="text-[var(--color-text-primary)]">Video Post-Production & Editing:</strong> High-quality editing, color grading, visual cleanup, sound enhancement, and cinematic storytelling for all types of video content.</li>
+                    <li><strong class="text-[var(--color-text-primary)]">Content Creation & Strategy:</strong> Creating digital-ready content — reels, posters, banners, social media creatives — crafted to strengthen online presence and engagement.</li>
+                    <li><strong class="text-[var(--color-text-primary)]">Motion Graphics & Animation:</strong> Designing smooth, modern motion designs for branding, intros, promotional videos, and digital campaigns.</li>
                 </ul>
-                
-                <h3 class="text-2xl font-semibold pt-2">Our Vision</h3>
-                <p>At Zyphix Studios, we believe in merging aesthetics with function. Every design decision is intentional — crafted to not only look great but also communicate effectively and resonate with the audience.</p>
-            
-                <div class="pt-6 text-center">
-                    
+                <h3 class="text-2xl font-bold pt-4 text-[var(--color-text-primary)]">Our Vision</h3>
+                <p class="font-medium">At Zyphix Studios, we believe in merging aesthetics with function. Every design decision is intentional — crafted to not only look great but also communicate effectively and resonate with the audience.</p>
+                <div class="pt-8 text-center">
                     <a href="https://www.instagram.com/zyphix.studios?igsh=YXkwdms2dXlyZWlk" 
-                       target="_blank" 
-                       rel="noopener noreferrer"
-                       class="inline-block px-8 py-3 bg-gradient-to-r from-[var(--color-button-start)] to-[var(--color-button-end)] text-white text-lg font-semibold rounded-full shadow-lg hover:shadow-xl hover:scale-105 transition-all duration-400 ease-out">
+                       target="_blank" rel="noopener noreferrer"
+                       class="inline-block px-10 py-4 bg-gradient-to-r from-[var(--color-button-start)] to-[var(--color-button-end)] text-white text-lg font-bold rounded-xl shadow-lg hover:shadow-xl hover:-translate-y-1 transition-all duration-400 ease-out">
                         Visit Zyphix
                     </a>
                 </div>
@@ -675,41 +548,28 @@
     </div>
     
     <!-- EdLance Modal -->
-    <div id="edlance-modal" class="hidden fixed inset-0 z-[100] flex items-center justify-center p-6 bg-black/50 backdrop-blur-sm transition-opacity duration-400 ease-out">
-        
-        <!-- Modal Backdrop -->
+    <div id="edlance-modal" class="hidden fixed inset-0 z-[100] flex items-center justify-center p-6 bg-gray-900/60 backdrop-blur-sm transition-opacity duration-400 ease-out">
         <div id="modal-backdrop-edlance" class="absolute inset-0"></div>
-
-        <!-- Modal Content Card -->
-        <div id="modal-content-card-edlance" class="modal-content-card glass-card w-full max-w-2xl p-8 relative z-10 opacity-0 translate-y-8">
-            
-            <!-- Close Button -->
-            <button id="close-edlance-modal" class="absolute top-4 right-6 text-3xl font-bold transition-colors duration-300 ease-out">&times;</button>
-            
-            <div class="flex flex-col sm:flex-row items-start mb-6">
-                <img src="edlance-logo.jpg" alt="EdLance Logo" class="w-24 h-24 rounded-lg mr-6 mb-4 sm:mb-0 border-2 border-[var(--border-secondary)] flex-shrink-0 object-cover" onerror="this.src='https://placehold.co/100x100/1f2937/4f46e5?text=EdLance'; this.onerror=null;">
-                <div>
-                    <div class="flex items-center gap-4">
-                        <h2 class="text-4xl font-bold">EdLance</h2>
-                        <span class="text-sm font-medium bg-[var(--color-accent-end)]/20 text-[var(--color-accent-start)] px-3 py-1 rounded-full">Demo Project</span>
+        <div id="modal-content-card-edlance" class="modal-content-card glass-card bg-white/95 w-full max-w-2xl p-8 relative z-10 opacity-0 translate-y-8 shadow-2xl border-white">
+            <button id="close-edlance-modal" class="absolute top-4 right-6 text-4xl text-gray-400 hover:text-gray-900 font-bold transition-colors duration-300 ease-out">&times;</button>
+            <div class="flex flex-col sm:flex-row items-start mb-8">
+                <img src="edlance-logo.jpg" alt="EdLance Logo" class="w-28 h-28 rounded-2xl mr-6 mb-4 sm:mb-0 border border-[var(--border-secondary)] shadow-sm flex-shrink-0 object-cover" onerror="this.src='https://placehold.co/100x100/e5e7eb/3b82f6?text=EdLance'; this.onerror=null;">
+                <div class="pt-2">
+                    <div class="flex flex-wrap items-center gap-4 mb-1">
+                        <h2 class="text-4xl font-bold text-[var(--color-text-primary)]">EdLance</h2>
+                        <span class="text-sm font-bold bg-blue-100 text-blue-700 px-3 py-1 rounded-full border border-blue-200">Demo Project</span>
                     </div>
-                    <p class="text-xl">Empowering Students Through Skill-Based Freelancing</p>
+                    <p class="text-xl text-[var(--color-link)] font-semibold">Skill-Based Freelancing</p>
                 </div>
             </div>
-
-            <!-- Scrollable Body -->
-            <div class="space-y-4 leading-relaxed max-h-[60vh] overflow-y-auto pr-2 modal-body">
+            <div class="space-y-5 leading-relaxed max-h-[60vh] overflow-y-auto pr-4 modal-body text-[var(--color-text-secondary)] font-medium">
                 <p>EdLance is a dedicated freelancing ecosystem designed exclusively for college students, helping them earn money, build industry-ready skills, and gain real project experience while still pursuing their education. Built with a vision to bridge the gap between academic learning and real-world opportunities, EdLance ensures that every student—regardless of background—can showcase their talent and access meaningful work.</p>
                 <p>Through EdLance, students can register using their college email ID or admission number, guaranteeing authenticity and creating a trusted network of verified student freelancers. The platform offers a seamless environment where students can discover projects, connect with clients, deliver high-quality work, and get rewarded for their skills.</p>
                 <p>Beyond connecting students to earning opportunities, EdLance also provides official experience certificates, enabling users to strengthen their portfolios, enhance employability, and stand out in a competitive job market. Whether it’s design, development, content writing, editing, or any other creative/technical field, EdLance becomes a launchpad for students to turn their passion into progress.</p>
-                <p>EdLance is not just a platform — it’s a stepping stone for students to grow, earn, and evolve into future professionals.</p>
-            
-                <div class="pt-6 text-center">
-                    
+                <div class="pt-8 text-center">
                     <a href="https://Edlance.site" 
-                       target="_blank" 
-                       rel="noopener noreferrer"
-                       class="inline-block px-8 py-3 bg-gradient-to-r from-[var(--color-button-start)] to-[var(--color-button-end)] text-white text-lg font-semibold rounded-full shadow-lg hover:shadow-xl hover:scale-105 transition-all duration-400 ease-out">
+                       target="_blank" rel="noopener noreferrer"
+                       class="inline-block px-10 py-4 bg-gradient-to-r from-[var(--color-button-start)] to-[var(--color-button-end)] text-white text-lg font-bold rounded-xl shadow-lg hover:shadow-xl hover:-translate-y-1 transition-all duration-400 ease-out">
                         Visit EdLance
                     </a>
                 </div>
@@ -718,53 +578,91 @@
     </div>
     
     <!-- BMS Modal -->
-    <div id="bms-modal" class="hidden fixed inset-0 z-[100] flex items-center justify-center p-6 bg-black/50 backdrop-blur-sm transition-opacity duration-400 ease-out">
-        
-        <!-- Modal Backdrop -->
+    <div id="bms-modal" class="hidden fixed inset-0 z-[100] flex items-center justify-center p-6 bg-gray-900/60 backdrop-blur-sm transition-opacity duration-400 ease-out">
         <div id="modal-backdrop-bms" class="absolute inset-0"></div>
-
-        <!-- Modal Content Card -->
-        <div id="modal-content-card-bms" class="modal-content-card glass-card w-full max-w-2xl p-8 relative z-10 opacity-0 translate-y-8">
-            
-            <!-- Close Button -->
-            <button id="close-bms-modal" class="absolute top-4 right-6 text-3xl font-bold transition-colors duration-300 ease-out">&times;</button>
-            
-            <div class="flex flex-col sm:flex-row items-start mb-6">
-                <img src="BMS.jpg" alt="BMS Logo" class="w-24 h-24 rounded-lg mr-6 mb-4 sm:mb-0 border-2 border-[var(--border-secondary)] flex-shrink-0 object-cover">
-                <div>
-                    <div class="flex items-center gap-4">
-                        <h2 class="text-4xl font-bold">Business Management System</h2>
-                        <span class="text-sm font-medium bg-[var(--color-accent-end)]/20 text-[var(--color-accent-start)] px-3 py-1 rounded-full">Demo Java Project</span>
+        <div id="modal-content-card-bms" class="modal-content-card glass-card bg-white/95 w-full max-w-2xl p-8 relative z-10 opacity-0 translate-y-8 shadow-2xl border-white">
+            <button id="close-bms-modal" class="absolute top-4 right-6 text-4xl text-gray-400 hover:text-gray-900 font-bold transition-colors duration-300 ease-out">&times;</button>
+            <div class="flex flex-col sm:flex-row items-start mb-8">
+                <img src="BMS.jpg" alt="BMS Logo" class="w-28 h-28 rounded-2xl mr-6 mb-4 sm:mb-0 border border-[var(--border-secondary)] shadow-sm flex-shrink-0 object-cover" onerror="this.src='https://placehold.co/100x100/e5e7eb/3b82f6?text=BMS'; this.onerror=null;">
+                <div class="pt-2">
+                    <div class="flex flex-wrap items-center gap-4 mb-1">
+                        <h2 class="text-4xl font-bold text-[var(--color-text-primary)]">Business System</h2>
+                        <span class="text-sm font-bold bg-purple-100 text-purple-700 px-3 py-1 rounded-full border border-purple-200">Java Demo</span>
                     </div>
-                    <p class="text-xl">Desktop App for Small Business Operations</p>
+                    <p class="text-xl text-[var(--color-link)] font-semibold">Small Business Operations</p>
                 </div>
             </div>
-
-            <!-- Scrollable Body -->
-            <div class="space-y-4 leading-relaxed max-h-[60vh] overflow-y-auto pr-2 modal-body">
+            <div class="space-y-5 leading-relaxed max-h-[60vh] overflow-y-auto pr-4 modal-body text-[var(--color-text-secondary)] font-medium">
                 <p>A desktop application for a small business built using Java Swing for the user interface and a MySQL database for the backend. Its main purpose is to centralize and manage all the core operations of a business in one place, replacing manual spreadsheets or paper files.</p>
-                
-                <h3 class="text-2xl font-semibold pt-2">Key Features</h3>
-                <ul class="list-disc list-inside ml-4 space-y-2">
-                    <li><strong>Technology:</strong> It uses Java Swing (for the GUI), JDBC to connect to a MySQL database, and follows a 3-Tier (DAO) architecture to keep the code clean.</li>
-                    <li><strong>Three Core Modules:</strong>
-                        <ul class="list-['–'] list-inside ml-6 space-y-1">
-                            <li><strong>Inventory Management:</strong> Lets you add, update, delete, and search for products. It has a "Check Status" button that shows you which products are low on stock, overstocked, or expired.</li>
-                            <li><strong>Employee Management:</strong> Lets you add, update, delete, and search for employees. It also has features to log daily attendance and automatically generate a payslip with bonuses and deductions.</li>
-                            <li><strong>Financial Management:</strong> Shows a dashboard with your total sales, expenses, and profit. You can add new daily financial records and and generate a simple monthly report.</li>
+                <h3 class="text-2xl font-bold pt-4 text-[var(--color-text-primary)]">Key Features</h3>
+                <ul class="list-disc list-inside ml-2 space-y-3">
+                    <li><strong class="text-[var(--color-text-primary)]">Technology:</strong> It uses Java Swing (for the GUI), JDBC to connect to a MySQL database, and follows a 3-Tier (DAO) architecture to keep the code clean.</li>
+                    <li><strong class="text-[var(--color-text-primary)]">Three Core Modules:</strong>
+                        <ul class="list-['–'] list-inside ml-6 mt-2 space-y-2 text-base">
+                            <li><strong class="text-gray-700">Inventory Management:</strong> Lets you add, update, delete, and search for products. It has a "Check Status" button that shows you which products are low on stock, overstocked, or expired.</li>
+                            <li><strong class="text-gray-700">Employee Management:</strong> Lets you add, update, delete, and search for employees. It also has features to log daily attendance and automatically generate a payslip with bonuses and deductions.</li>
+                            <li><strong class="text-gray-700">Financial Management:</strong> Shows a dashboard with your total sales, expenses, and profit. You can add new daily financial records and generate a simple monthly report.</li>
                         </ul>
                     </li>
-                    <li><strong>User-Friendly:</strong> All data entry (like adding a new product or employee) is done through a single, clean pop-up window instead of multiple annoying ones.</li>
-                    <li><strong>Database Control:</strong> It has a "Reset Database" button on the main menu to easily wipe and restart the data, which is useful for testing.</li>
+                    <li><strong class="text-[var(--color-text-primary)]">User-Friendly:</strong> All data entry (like adding a new product or employee) is done through a single, clean pop-up window instead of multiple annoying ones.</li>
+                    <li><strong class="text-[var(--color-text-primary)]">Database Control:</strong> It has a "Reset Database" button on the main menu to easily wipe and restart the data, which is useful for testing.</li>
                 </ul>
-            
-                <div class="pt-6 text-center">
-                    
+                <div class="pt-8 text-center">
                     <a href="https://drive.google.com/file/d/1ChmlHAjTCbNi6GBcUWti8qZwDHlTlz_1/view?usp=sharing" 
-                       target="_blank" 
-                       rel="noopener noreferrer"
-                       class="inline-block px-8 py-3 bg-gradient-to-r from-[var(--color-button-start)] to-[var(--color-button-end)] text-white text-lg font-semibold rounded-full shadow-lg hover:shadow-xl hover:scale-105 transition-all duration-400 ease-out">
+                       target="_blank" rel="noopener noreferrer"
+                       class="inline-block px-10 py-4 bg-gradient-to-r from-[var(--color-button-start)] to-[var(--color-button-end)] text-white text-lg font-bold rounded-xl shadow-lg hover:shadow-xl hover:-translate-y-1 transition-all duration-400 ease-out">
                         Get Project Code
+                    </a>
+                </div> 
+            </div>
+        </div>
+    </div>
+
+    <!-- FRISP OS Modal -->
+    <div id="frisp-modal" class="hidden fixed inset-0 z-[100] flex items-center justify-center p-6 bg-gray-900/60 backdrop-blur-sm transition-opacity duration-400 ease-out">
+        <div id="modal-backdrop-frisp" class="absolute inset-0"></div>
+        <div id="modal-content-card-frisp" class="modal-content-card glass-card bg-white/95 w-full max-w-2xl p-8 relative z-10 opacity-0 translate-y-8 shadow-2xl border-white">
+            <button id="close-frisp-modal" class="absolute top-4 right-6 text-4xl text-gray-400 hover:text-gray-900 font-bold transition-colors duration-300 ease-out">&times;</button>
+            <div class="flex flex-col sm:flex-row items-start mb-8">
+                <img src="frisp-logo.jpg" alt="FRISP OS Logo" class="w-28 h-28 rounded-2xl mr-6 mb-4 sm:mb-0 border border-[var(--border-secondary)] shadow-sm flex-shrink-0 object-cover" onerror="this.src='https://placehold.co/100x100/e5e7eb/3b82f6?text=FRISP'; this.onerror=null;">
+                <div class="pt-2">
+                    <div class="flex flex-wrap items-center gap-4 mb-1">
+                        <h2 class="text-4xl font-bold text-[var(--color-text-primary)]">FRISP OS</h2>
+                        <span class="text-sm font-bold bg-indigo-100 text-indigo-700 px-3 py-1 rounded-full border border-indigo-200">Systems Engineering</span>
+                    </div>
+                    <p class="text-xl text-[var(--color-link)] font-semibold">Experimental Microkernel Project</p>
+                </div>
+            </div>
+            <div class="space-y-5 leading-relaxed max-h-[60vh] overflow-y-auto pr-4 modal-body text-[var(--color-text-secondary)] font-medium">
+                <p>FRISP OS is a research-oriented microkernel operating system built from scratch as a long-term systems engineering project under FryLabs Studio. The project is focused on understanding operating system architecture from first principles — starting at the boot process and progressing toward user-space execution.</p>
+                <p>The goal of FRISP OS is not commercial release, but deep technical exploration of how modern systems operate at the lowest level.</p>
+                
+                <h3 class="text-2xl font-bold pt-4 text-[var(--color-text-primary)]">Core Focus Areas</h3>
+                <ul class="list-disc list-inside ml-2 space-y-3">
+                    <li><strong class="text-[var(--color-text-primary)]">Boot Process & Bare-Metal Initialization:</strong> Implementing and validating the boot flow, setting up Multiboot compliance, and preparing the execution environment for kernel entry.</li>
+                    <li><strong class="text-[var(--color-text-primary)]">Memory Management & Paging:</strong> Designing virtual memory structures, enabling paging, and implementing strict memory isolation between kernel and user space.</li>
+                    <li><strong class="text-[var(--color-text-primary)]">Interrupt Handling & CPU Structures:</strong> Setting up GDT and IDT, handling hardware interrupts, and preparing the foundation for stable kernel execution.</li>
+                    <li><strong class="text-[var(--color-text-primary)]">Microkernel Architecture:</strong> Keeping the kernel minimal by isolating essential components (scheduling, memory management, IPC) while moving drivers and services toward user space.</li>
+                    <li><strong class="text-[var(--color-text-primary)]">Preemptive Multitasking & IPC:</strong> Exploring process scheduling, context switching, and secure message-based inter-process communication.</li>
+                </ul>
+
+                <h3 class="text-2xl font-bold pt-4 text-[var(--color-text-primary)]">Technologies Used</h3>
+                <ul class="list-disc list-inside ml-2 space-y-2 text-base">
+                    <li>C / C++</li>
+                    <li>x86_64 Assembly</li>
+                    <li>Bare Metal Development</li>
+                    <li>Custom Bootloader & Toolchain</li>
+                </ul>
+
+                <h3 class="text-2xl font-bold pt-4 text-[var(--color-text-primary)]">Vision</h3>
+                <p>FRISP OS exists as a hands-on exploration of low-level systems design. The project is driven by curiosity and a desire to understand how operating systems function beneath abstraction layers.</p>
+                <p class="italic">Built progressively, one subsystem at a time.</p>
+
+                <div class="pt-8 text-center">
+                    <a href="#" 
+                       target="_blank" rel="noopener noreferrer"
+                       class="inline-block px-10 py-4 bg-gradient-to-r from-[var(--color-button-start)] to-[var(--color-button-end)] text-white text-lg font-bold rounded-xl shadow-lg hover:shadow-xl hover:-translate-y-1 transition-all duration-400 ease-out">
+                        Visit FRISP OS
                     </a>
                 </div> 
             </div>
@@ -780,60 +678,32 @@
     <script>
         document.addEventListener('DOMContentLoaded', () => {
 
-            const themeButtons = document.querySelectorAll('.theme-button');
-            const body = document.body;
-            const themeKey = 'abhinav-portfolio-theme';
-            const mainBody = document.body; // Get the body for scroll lock
-
-            // --- 1. THEME SWITCHER LOGIC ---
-            function setTheme(theme) {
-                body.classList.remove('theme-green', 'theme-dark', 'theme-purple', 'theme-white');
-                body.classList.add(theme);
-                localStorage.setItem(themeKey, theme);
-                themeButtons.forEach(btn => {
-                    if (btn.dataset.theme === theme) {
-                        btn.classList.add('active');
-                    } else {
-                        btn.classList.remove('active');
-                    }
-                });
-            }
-            themeButtons.forEach(button => {
-                button.addEventListener('click', () => {
-                    const theme = button.dataset.theme;
-                    setTheme(theme);
-                });
-            });
-            // Load saved theme or default to green
-            const savedTheme = localStorage.getItem(themeKey);
-            if (savedTheme) {
-                setTheme(savedTheme);
-            } else {
-                setTheme('theme-green'); // Default theme
-            }
-
+            const mainBody = document.body; 
             
-            // --- 2. NEW: MOBILE MENU LOGIC ---
+            // --- 1. MOBILE MENU LOGIC ---
             const hamburgerBtn = document.getElementById('hamburger-btn');
             const mobileMenu = document.getElementById('mobile-menu');
             const mobileNavLinks = document.querySelectorAll('.mobile-nav-link');
 
             
-            // --- 3. HEADER SCROLL EFFECT ---
+            // --- 2. HEADER SCROLL EFFECT ---
             const header = document.getElementById('main-header');
             window.addEventListener('scroll', () => {
-                // Don't run this logic if the mobile menu is open
                 if (!hamburgerBtn.classList.contains('menu-open')) {
                     if (window.scrollY > 50) {
                         header.classList.add('header-scrolled');
+                        header.classList.remove('py-5');
+                        header.classList.add('py-3');
                     } else {
                         header.classList.remove('header-scrolled');
+                        header.classList.remove('py-3');
+                        header.classList.add('py-5');
                     }
                 }
             });
 
 
-            // --- 4. SCROLL REVEAL EFFECT ---
+            // --- 3. SCROLL REVEAL EFFECT ---
             const revealElements = document.querySelectorAll('.js-scroll-reveal');
             
             const revealObserver = new IntersectionObserver((entries) => {
@@ -852,115 +722,64 @@
             });
 
             
-            // --- 5. ZYPHIX MODAL LOGIC ---
-            const openZyphixModalBtn = document.getElementById('open-zyphix-modal');
-            const closeZyphixModalBtn = document.getElementById('close-zyphix-modal');
-            const zyphixModal = document.getElementById('zyphix-modal');
-            const zyphixModalBackdrop = document.getElementById('modal-backdrop-zyphix');
-            const zyphixModalContent = document.getElementById('modal-content-card-zyphix');
+            // --- 4. MODAL LOGIC (DRY approach) ---
+            function setupModal(openBtnId, closeBtnId, modalId, backdropId, contentCardId) {
+                const openBtn = document.getElementById(openBtnId);
+                const closeBtn = document.getElementById(closeBtnId);
+                const modal = document.getElementById(modalId);
+                const backdrop = document.getElementById(backdropId);
+                const contentCard = document.getElementById(contentCardId);
 
-            function openZyphixModal() {
-                zyphixModal.classList.remove('hidden');
-                updateScrollLock(); // Use the new function
-                setTimeout(() => {
-                    zyphixModalContent.classList.remove('opacity-0', 'translate-y-8');
-                }, 50);
+                function openModal() {
+                    modal.classList.remove('hidden');
+                    updateScrollLock(); 
+                    setTimeout(() => {
+                        contentCard.classList.remove('opacity-0', 'translate-y-8');
+                    }, 50);
+                }
+
+                function closeModal() {
+                    contentCard.classList.add('opacity-0', 'translate-y-8');
+                    setTimeout(() => {
+                        modal.classList.add('hidden');
+                        updateScrollLock(); 
+                    }, 400); 
+                }
+
+                if(openBtn) openBtn.addEventListener('click', openModal);
+                if(closeBtn) closeBtn.addEventListener('click', closeModal);
+                if(backdrop) backdrop.addEventListener('click', closeModal);
+                
+                return closeModal; // Return the close function so the Escape key logic can use it
             }
 
-            function closeZyphixModal() {
-                zyphixModalContent.classList.add('opacity-0', 'translate-y-8');
-                /* SMOOTHER TIMEOUT */
-                setTimeout(() => {
-                    zyphixModal.classList.add('hidden');
-                    updateScrollLock(); // Use the new function
-                }, 400); // <-- Match CSS duration
-            }
-
-            openZyphixModalBtn.addEventListener('click', openZyphixModal);
-            closeZyphixModalBtn.addEventListener('click', closeZyphixModal);
-            zyphixModalBackdrop.addEventListener('click', closeZyphixModal);
-
-            
-            // --- 6. EDLANCE MODAL LOGIC ---
-            const openEdlanceModalBtn = document.getElementById('open-edlance-modal');
-            const closeEdlanceModalBtn = document.getElementById('close-edlance-modal');
-            const edlanceModal = document.getElementById('edlance-modal');
-            const edlanceModalBackdrop = document.getElementById('modal-backdrop-edlance');
-            const edlanceModalContent = document.getElementById('modal-content-card-edlance');
-
-            function openEdlanceModal() {
-                edlanceModal.classList.remove('hidden');
-                updateScrollLock(); // Use the new function
-                setTimeout(() => {
-                    edlanceModalContent.classList.remove('opacity-0', 'translate-y-8');
-                }, 50);
-            }
-
-            function closeEdlanceModal() {
-                edlanceModalContent.classList.add('opacity-0', 'translate-y-8');
-                /* SMOOTHER TIMEOUT */
-                setTimeout(() => {
-                    edlanceModal.classList.add('hidden');
-                    updateScrollLock(); // Use the new function
-                }, 400); // <-- Match CSS duration
-            }
-
-            openEdlanceModalBtn.addEventListener('click', openEdlanceModal);
-            closeEdlanceModalBtn.addEventListener('click', closeEdlanceModal);
-            edlanceModalBackdrop.addEventListener('click', closeEdlanceModal);
-            
-            
-            // --- 7. BMS MODAL LOGIC ---
-            const openBmsModalBtn = document.getElementById('open-bms-modal');
-            const closeBmsModalBtn = document.getElementById('close-bms-modal');
-            const bmsModal = document.getElementById('bms-modal');
-            const bmsModalBackdrop = document.getElementById('modal-backdrop-bms');
-            const bmsModalContent = document.getElementById('modal-content-card-bms');
-
-            function openBmsModal() {
-                bmsModal.classList.remove('hidden');
-                updateScrollLock(); // Use the new function
-                setTimeout(() => {
-                    bmsModalContent.classList.remove('opacity-0', 'translate-y-8');
-                }, 50);
-            }
-
-            function closeBmsModal() {
-                bmsModalContent.classList.add('opacity-0', 'translate-y-8');
-                /* SMOOTHER TIMEOUT */
-                setTimeout(() => {
-                    bmsModal.classList.add('hidden');
-                    updateScrollLock(); // Use the new function
-                }, 400); // <-- Match CSS duration
-            }
-
-            openBmsModalBtn.addEventListener('click', openBmsModal);
-            closeBmsModalBtn.addEventListener('click', closeBmsModal);
-            bmsModalBackdrop.addEventListener('click', closeBmsModal);
+            const closeZyphix = setupModal('open-zyphix-modal', 'close-zyphix-modal', 'zyphix-modal', 'modal-backdrop-zyphix', 'modal-content-card-zyphix');
+            const closeEdlance = setupModal('open-edlance-modal', 'close-edlance-modal', 'edlance-modal', 'modal-backdrop-edlance', 'modal-content-card-edlance');
+            const closeBms = setupModal('open-bms-modal', 'close-bms-modal', 'bms-modal', 'modal-backdrop-bms', 'modal-content-card-bms');
+            const closeFrisp = setupModal('open-frisp-modal', 'close-frisp-modal', 'frisp-modal', 'modal-backdrop-frisp', 'modal-content-card-frisp');
 
 
-            // --- 8. NEW: SCROLL LOCK MANAGER ---
-            // This function checks if *any* overlay is open and locks/unlocks the body.
+            // --- 5. SCROLL LOCK MANAGER ---
             function updateScrollLock() {
                 const menuOpen = hamburgerBtn.classList.contains('menu-open');
-                const zyphixOpen = !zyphixModal.classList.contains('hidden');
-                const edlanceOpen = !edlanceModal.classList.contains('hidden');
-                const bmsOpen = !bmsModal.classList.contains('hidden');
+                const zyphixOpen = !document.getElementById('zyphix-modal').classList.contains('hidden');
+                const edlanceOpen = !document.getElementById('edlance-modal').classList.contains('hidden');
+                const bmsOpen = !document.getElementById('bms-modal').classList.contains('hidden');
+                const frispOpen = !document.getElementById('frisp-modal').classList.contains('hidden');
 
-                if (menuOpen || zyphixOpen || edlanceOpen || bmsOpen) {
+                if (menuOpen || zyphixOpen || edlanceOpen || bmsOpen || frispOpen) {
                     mainBody.classList.add('overflow-hidden');
                 } else {
                     mainBody.classList.remove('overflow-hidden');
                 }
             }
             
-            // --- 9. ADDED: MOBILE MENU TOGGLE & LINK CLICK ---
+            // --- 6. MOBILE MENU TOGGLE & LINK CLICK ---
             function toggleMenu() {
                 hamburgerBtn.classList.toggle('menu-open');
                 mobileMenu.classList.toggle('-translate-x-full');
-                updateScrollLock(); // Use the new function
+                updateScrollLock();
 
-                // Also make the header glass effect instant when menu is open
                 if (hamburgerBtn.classList.contains('menu-open')) {
                     header.classList.add('header-scrolled');
                 } else if (window.scrollY <= 50) {
@@ -972,41 +791,46 @@
             mobileNavLinks.forEach(link => {
                 link.addEventListener('click', () => {
                     if (hamburgerBtn.classList.contains('menu-open')) {
-                        toggleMenu(); // This already calls updateScrollLock()
+                        toggleMenu();
                     }
                 });
             });
 
 
-            // --- 10. GLOBAL MODAL ESCAPE KEY ---
+            // --- 7. GLOBAL MODAL ESCAPE KEY ---
             document.addEventListener('keydown', (e) => {
                 if (e.key === 'Escape') {
-                    // 1. Check if mobile menu is open
                     if (hamburgerBtn.classList.contains('menu-open')) {
-                        toggleMenu(); // This calls updateScrollLock()
-                        return; // Prioritize closing menu
+                        toggleMenu(); 
+                        return; 
                     }
-                    // 2. If not, check for modals
-                    if (!zyphixModal.classList.contains('hidden')) {
-                        closeZyphixModal();
-                    }
-                    if (!edlanceModal.classList.contains('hidden')) {
-                        closeEdlanceModal();
-                    }
-                    if (!bmsModal.classList.contains('hidden')) {
-                        closeBmsModal();
-                    }
+                    if (!document.getElementById('zyphix-modal').classList.contains('hidden')) closeZyphix();
+                    if (!document.getElementById('edlance-modal').classList.contains('hidden')) closeEdlance();
+                    if (!document.getElementById('bms-modal').classList.contains('hidden')) closeBms();
+                    if (!document.getElementById('frisp-modal').classList.contains('hidden')) closeFrisp();
                 }
             });
 
-            // --- 11. JAVASCRIPT CONTACT FORM SUBMISSION ---
+            // --- 8. JAVASCRIPT CONTACT FORM SUBMISSION ---
             const form = document.getElementById('contact-form');
             const formStatus = document.getElementById('form-status');
 
             form.addEventListener('submit', async function(e) {
                 e.preventDefault();
                 const data = new FormData(form);
+                const submitBtn = form.querySelector('button[type="submit"]');
+                const originalBtnText = submitBtn.innerHTML;
                 
+                // Show loading state
+                submitBtn.innerHTML = `
+                    <svg class="animate-spin -ml-1 mr-3 h-5 w-5 text-white" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24">
+                        <circle class="opacity-25" cx="12" cy="12" r="10" stroke="currentColor" stroke-width="4"></circle>
+                        <path class="opacity-75" fill="currentColor" d="M4 12a8 8 0 018-8V0C5.373 0 0 5.373 0 12h4zm2 5.291A7.962 7.962 0 014 12H0c0 3.042 1.135 5.824 3 7.938l3-2.647z"></path>
+                    </svg>
+                    Sending...
+                `;
+                submitBtn.disabled = true;
+
                 try {
                     const response = await fetch('https://formspree.io/f/xanaqjvn', {
                         method: 'POST',
@@ -1017,35 +841,42 @@
                     });
 
                     if (response.ok) {
-                        formStatus.textContent = "Message sent successfully!";
+                        formStatus.textContent = "Thank you! Message sent successfully.";
                         formStatus.style.color = "var(--color-success)";
-                        form.reset(); // Clear the form fields
+                        form.reset(); 
                     } else {
-                        // Handle server-side errors
                         formStatus.textContent = "Oops! There was a problem. Please try again.";
                         formStatus.style.color = "var(--color-error)";
                     }
                 } catch (error) {
-                    // Handle network errors
                     console.error('Form submission error:', error);
                     formStatus.textContent = "Oops! There was a network error. Please try again.";
                     formStatus.style.color = "var(--color-error)";
+                } finally {
+                    // Restore button state
+                    submitBtn.innerHTML = originalBtnText;
+                    submitBtn.disabled = false;
+                    
+                    // Clear the status message after 5 seconds
+                    setTimeout(() => {
+                        formStatus.textContent = '';
+                    }, 5000);
                 }
-
-                // Clear the status message after 5 seconds
-                setTimeout(() => {
-                    formStatus.textContent = '';
-                }, 5000);
             });
 
-            // --- 12. UPDATED: MOUSE-FOLLOWING GRADIENT ---
+            // --- 9. MOUSE-FOLLOWING GRADIENT & AUTO-REVEAL ---
             const heroName = document.getElementById('hero-name');
+
+            // Wait 2.5 seconds (cooldown) after page load, then slowly reveal color
+            setTimeout(() => {
+                heroName.classList.add('auto-reveal');
+            }, 2500);
+
             heroName.addEventListener('mousemove', (e) => {
                 const rect = heroName.getBoundingClientRect();
-                const x = e.clientX - rect.left; // x position within the element.
-                const y = e.clientY - rect.top;  // y position within the element.
+                const x = e.clientX - rect.left; 
+                const y = e.clientY - rect.top;  
 
-                // Update the CSS variables
                 heroName.style.setProperty('--x', `${(x / rect.width) * 100}%`);
                 heroName.style.setProperty('--y', `${(y / rect.height) * 100}%`);
             });
